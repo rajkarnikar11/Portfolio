@@ -1,0 +1,39 @@
+.container{
+    
+    background-color: #131313;
+    border-bottom: solid rgb(187, 186, 186) 2px;
+    text-align: center;    
+    justify-content: center;
+    padding: 5px 50px; 
+    z-index: 1;  
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    
+    
+}
+
+.logo{
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+    font-weight: 900;
+    color: #999a9b;
+    background-color: #131313;
+
+}
+.navItems{
+    color: #999a9b;
+    display: inline;
+    list-style-type: none;
+    padding:0px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    position: sticky;
+    
+}
+.navItems:hover{
+    transform: scale(1.5);
+    color: thistle;
+}
