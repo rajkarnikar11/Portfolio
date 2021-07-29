@@ -1,0 +1,82 @@
+.container{
+    height: 100vh;
+    text-align: center;
+    padding: 200px;
+}
+.title{
+    
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    width: 20%;
+    color: #131313;
+}
+.titlecontainer{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    align-items: center;
+    
+}
+.lineleft{
+    height: 3px;
+    background-image: linear-gradient(to right,white,#131313);
+    width: 40%;
+}
+.lineright{
+    height: 3px;
+    background-image: linear-gradient(to right,#131313,white);
+    width: 40%;
+}
+.skillscontainer{
+    text-align: center;
+    list-style: none;
+    margin-top: 100px;
+}
+.skills{
+    
+    padding: 20px;
+    width: 60%;
+    margin: auto;
+    margin-top: 10px;
+    color: #131313;
+}
+.seperatorline{
+    height: 2px;
+    background-image: linear-gradient(to right,white,#131313,white);
+    box-shadow: 2px 2px 5px;
+}
+@media screen and (max-width: 600px){
+    .titlecontainer{
+        width: 80%;
+        margin: auto;
+       
+        
+    }
+    .skillscontainer{
+        text-align: center;
+        width: 80%;
+    }
+    .skill{
+        padding:20px ;
+    }
+    .title{
+        font-family: montserrat;
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        width: 40%;
+        color: #131313;
+    }
+    .lineleft{
+        height: 3px;
+        background-image: linear-gradient(to right,white,#131313);
+        width: 30%;
+    }
+    .lineright{
+        height: 3px;
+        background-image: linear-gradient(to right,#131313,white);
+        width: 30%;
+    }
+}
