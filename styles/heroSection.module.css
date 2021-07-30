@@ -10,7 +10,7 @@
 }
 .bold{
     font-family: Montserrat;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 600;
     color: #131313;
     opacity: 0.9;
@@ -19,12 +19,13 @@
 .name{
     font-family: 'Oswald', sans-serif;
     font-weight: 200;
-    opacity: .5;
-    font-size: 40px;
-    margin-top: 0px;
+    opacity: .8;
+    font-size: 30px;
+    margin-top: -15px;
 }
+
 .textarea{
-    margin-left: 15%;
+    margin-left: 5%;
     position: absolute;
     top: 50%;
     /* -ms-transform: translateY(-50%); */
@@ -40,8 +41,17 @@
     font-weight: bold;
     margin-top: 10px;
     transition: all 0.2s linear;
+    margin-bottom: 20px;
    
     
+}
+.about{
+      color: #131313;
+      font-size: smaller;
+      font-weight: 600;
+      width: 500px;
+      
+      
 }
 .button:hover{
     background-color: #131313;
@@ -52,10 +62,15 @@
 }
     @media screen and (max-width: 600px){
         .bold{
-            font-size: 30px;
+            font-size: 25px;
         }
+        .about{
+            color: #131313;
+            width: 220px;
+            
+      }
         .name{
-            font-size: 18px;
+            font-size: 15px;
             margin-top: -7px;
         }
         .textarea{
@@ -67,5 +82,28 @@
             margin-top: 25vh;
             height: 40vh;
             
+        }
+    }
+    @media screen and (max-width: 850px){
+        .name{
+            font-size: 25px;
+            margin-top: -7px;
+        }
+        .textarea{
+            margin-left: 4%;
+            position: absolute;
+            
+            }
+        .container{
+            margin-top: 25vh;
+            height: 40vh;
+            
+        }
+        .bold{
+            font-size: 40px;
+        }
+        .about{
+            color: #131313;
+            width: 320px;
         }
     }

@@ -1,18 +1,20 @@
 import Head from 'next/head'
 import Image from 'next/image'
 
-import HeroSection from '../Components/HeroSection'
+import HeroSection from '../Components/heroSection'
 import styles from '../styles/Index.module.css'
 
-import NavbarPrimary from '../Components/NavbarPrimary'
-import NavbarSecondary from '../Components/NavbarSecondary'
+import NavbarPrimary from '../Components/navbarPrimary'
+import NavbarSecondary from '../Components/navbarSecondary'
 
-import SwiperCore, { Navigation,EffectFade ,Autoplay,Mousewheel, Pagination, Scrollbar, A11y } from 'swiper';
+import SwiperCore, { Navigation,Parallax,EffectFade ,Autoplay,Mousewheel, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Skills from '../Components/skills'
-import Tools from '../Components/Tools'
+import Tools from '../Components/tools'
+import Footer from '../Components/Footer'
+import Contact from '../Components/contact'
 
-SwiperCore.use([Navigation,Autoplay, EffectFade,Mousewheel, Pagination, Scrollbar, A11y]);
+SwiperCore.use([Navigation ,Parallax,Autoplay, EffectFade,Mousewheel, Pagination, Scrollbar, A11y]);
 
 export default function Home() {
   return (
@@ -20,16 +22,18 @@ export default function Home() {
       <NavbarPrimary/>
       <NavbarSecondary/>
       <div className={styles.swiper}>
-        <Swiper
+        <Swiper id="swiper"
         effect="coverflow"
         spaceBetween={0}
         slidesPerView={1}
         direction={'vertical'}
         // scrollbar={{ draggable: true }}
-        autoplay={{
-          "delay": 10000,
-          "disableOnInteraction": false
-          }}
+        // autoplay={{
+        //   "delay": 12000,
+        //   "disableOnInteraction": false
+        //   }}
+        parallax={true}
+        speed={1000}
         pagination={{"type":"progressbar",
         progressbarOpposite:true,
         }}
@@ -45,6 +49,12 @@ export default function Home() {
         <SwiperSlide>
           <Tools />
         </SwiperSlide>   
+        <SwiperSlide>
+          <Contact />
+        </SwiperSlide>  
+        <SwiperSlide>
+          <Footer />
+        </SwiperSlide> 
       </Swiper>
       </div>
      

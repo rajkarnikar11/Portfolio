@@ -1,29 +1,118 @@
-import React from 'react'
+import React, { useState,useRef, useEffect } from 'react';
+import {gsap,Power3} from "gsap";
 import styles from '../styles/skills.module.css'
+import Image from 'next/dist/client/image';
 function Tools() {
+    let head=useRef(null);
+    let timeLine=gsap.timeline()
+    
+    
+    function up(){
+        gsap.to(head,.3,{y:-20})
+    }
+    function down(){
+        timeLine.to(head,.1,{y:0})
+                .to(head,.15,{y:-10})
+                .to(head,.1,{y:0})
+                .to(head,.1,{y:-3})
+                .to(head,.05,{y:0})
+                .to(head,.05,{y:-1})
+                .to(head,.02,{y:0})
+    }
+    
+        
+      
+    
     return (
-        <div className="styles.container">
-            <div className={styles.titlecontainer} >
-                <div className={styles.lineleft}/>
-                <h1 className={styles.title}>
+        <div id="tools" className="styles.container">
+            
+            <div   className={styles.titlecontainer} >
+                
+                <h1 ref={el=>head=el} onMouseEnter={up} onMouseLeave={down} className={styles.title}>
                     TOOLS
                 </h1>
-                <div className={styles.lineright}/>
-            </div>
-            <ul className={styles.skillscontainer}>
-                <li className={styles.skills}>
-                    Photoshop
-                </li>
-                <li className={styles.skills}>
-                    Figma
-                </li>
-                <li className={styles.skills}>
-                    Illustrator
-                </li>
-                <li className={styles.skills}>
-                    VSCode
-                </li>
+                <div className={styles.titleline} />
                 
+            </div>
+           
+            <ul   className={styles.skillscontainer}>
+            <div className={styles.listcontainer}> 
+                    <li  className={styles.skills}>
+                        <div  className={styles.starcontainer}>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" />
+                        </div>
+                        VSCode
+                    </li>
+                </div>  
+                <div className={styles.seperationlinecontainer}>
+                    <div className={styles.seperatorlineleft} />
+                    <div className={styles.seperatorline} />
+                    <div className={styles.seperatorlineright} />
+                </div>
+                    
+                <div className={styles.listcontainer}> 
+                    <li  className={styles.skills}>
+                        <div  className={styles.starcontainer}>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" />
+                        </div>
+                        Figma
+                    </li>
+                </div>  
+                <div className={styles.seperationlinecontainer}>
+                    <div className={styles.seperatorlineleft} />
+                    <div className={styles.seperatorline} />
+                    <div className={styles.seperatorlineright} />
+                </div>
+                <div className={styles.listcontainer}> 
+                    <li  className={styles.skills}>
+                        <div  className={styles.starcontainer}>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" />
+                        </div>
+                        Illustrator
+                    </li>
+                </div>  
+                <div className={styles.seperationlinecontainer}>
+                    <div className={styles.seperatorlineleft} />
+                    <div className={styles.seperatorline} />
+                    <div className={styles.seperatorlineright} />
+                </div>
+                <div className={styles.listcontainer}> 
+                    <li  className={styles.skills}>
+                        <div  className={styles.starcontainer}>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" />
+                        </div>
+                        Photoshop
+                    </li>
+                </div>  
+                <div className={styles.seperationlinecontainer}>
+                    <div className={styles.seperatorlineleft} />
+                    <div className={styles.seperatorline} />
+                    <div className={styles.seperatorlineright} />
+                </div>
+                {/* <li className={styles.skills}>
+                    NEXTJS
+                </li>
+                <div className={styles.seperationlinecontainer}>
+                    <div className={styles.seperatorlineleft} />
+                    <div className={styles.seperatorline} />
+                    <div className={styles.seperatorlineright} />
+                </div> */}
             </ul>
         </div>
     )
