@@ -12,6 +12,9 @@ class MyDocument extends Document {
                 <Head>
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+                <link href="https://fonts.googleapis.com/css2?family=Georama:wght@300&display=swap" rel="stylesheet"/>
+                <link rel="preconnect" href="https://fonts.googleapis.com"/>
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
                 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet"/>
                 <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css"/>
                 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"/>

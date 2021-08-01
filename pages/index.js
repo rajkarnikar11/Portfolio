@@ -27,17 +27,17 @@ export default function Home() {
       {/* <NavbarSecondary/> */}
       <div className={styles.swiper}>
         <Swiper id="swiper"
-        // effect="coverflow"
+        effect="coverflow"
         spaceBetween={0}
         slidesPerView={1}
         
        
         direction={'vertical'}
         scrollbar={{ draggable: true }}
-        // autoplay={{
-        //   "delay": 12000,
-        //   "disableOnInteraction": false
-        //   }}
+        autoplay={{
+          "delay": 12000,
+          "disableOnInteraction": false
+          }}
         parallax={true}
         speed={1000}
         pagination={{"type":"progressbar",
@@ -50,6 +50,11 @@ export default function Home() {
           <HeroSection />
         </SwiperSlide>
         <SwiperSlide>
+          <Work />
+          <Workmedium/>
+          <Worksmall/>
+        </SwiperSlide> 
+        <SwiperSlide>
           <Skills />
         </SwiperSlide>
         <SwiperSlide>
@@ -58,11 +63,7 @@ export default function Home() {
         <SwiperSlide>
           <Contact />
         </SwiperSlide>  
-        <SwiperSlide>
-          <Work />
-          <Workmedium/>
-          <Worksmall/>
-        </SwiperSlide> 
+        
         <SwiperSlide>
           <Footer />
         </SwiperSlide> 

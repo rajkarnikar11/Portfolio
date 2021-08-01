@@ -11,16 +11,20 @@ function HeroSection() {
     let name= useRef(null);
     let title= useRef(null);
     var tl = gsap.timeline();
+    var timeLine2 = gsap.timeline();
     var t2 = gsap.timeline({repeat:-1});
+    function pop(){
+        t2.pause();
+        window.location.reload()
+        
+    }
     
     
     const shake =()=>{
         t2.fromTo(contact,.2,{x:20},{x:0})
         t2.resume();
     }
-    const stop =()=>{
-        t2.pause();
-    }
+    
 
     useEffect(()=>{
         tl.from(name,.2, {x:-7000,opacity:0,delay:1})
@@ -39,11 +43,13 @@ function HeroSection() {
                    Front End developer
                 </h1>
 
-                <Link href="/">
-                    <div onMouseEnter={shake} onMouseLeave={stop} ref={el=>contact=el} className={styles.button}>
-                        Contact
+                <a href='/resume/Resume.pdf' download="Resume" download target='_blank'>
+                    <div onMouseEnter={shake} onClick={pop} onMouseLeave={pop} ref={el=>contact=el} className={styles.button}>
+                        <div>Resume</div>
+                        <Image  src="/assets/download.svg" height="20" width="20" />
+
                     </div>                 
-                </Link>
+                </a>
                 <div className={styles.about}>
                     <Typewriter 
                         onInit={(typewriter)=> {
@@ -51,7 +57,7 @@ function HeroSection() {
 
                             typewriter
                             .pauseFor(1500)
-                            .typeString("Hello!!!")
+                            .typeString("NAMASTE!!!")
                             .changeDelay(30)  
                             .pauseFor(800)
                             .deleteAll()

@@ -79,18 +79,18 @@ function contact() {
             </div>
            
             <ul className={styles.logocontainer}>
-                <Link href="">
-                    <li  ref={el=>fb=el} onMouseEnter={upfb} onMouseLeave={downfb} className={styles.logo}>
+                <Link href="https://www.facebook.com/S.Rajkarnikar11/">
+                    <li  ref={el=>fb=el} onMouseOver={upfb} onMouseLeave={downfb} className={styles.logo}>
                         <Image  className={styles.logoimage} src="/assets/facebook.svg" height="50" width="50" />
                     </li>
                 </Link>
-                <Link href="">
-                    <li ref={el=>tw=el}  onMouseEnter={uptw} onMouseLeave={downtw} className={styles.logo}>
+                <Link href="https://twitter.com/rajkarnikar11">
+                    <li ref={el=>tw=el}  onMouseOver={uptw} onMouseLeave={downtw} className={styles.logo}>
                         <Image className={styles.logoimage} src="/assets/twitter.svg" height="50" width="50" />
                     </li>
                 </Link>
-                <Link href="">
-                    <li ref={el=>li=el}  onMouseEnter={upli} onMouseLeave={downli} className={styles.logo}>
+                <Link href="https://np.linkedin.com/in/salil-rajkarnikar-93b649201">
+                    <li ref={el=>li=el}  onMouseOver={upli} onMouseLeave={downli} className={styles.logo}>
                         <Image className={styles.logoimage} src="/assets/linkedin.svg" height="50" width="50" />
                     </li>
                 </Link>
