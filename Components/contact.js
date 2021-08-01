@@ -81,7 +81,7 @@ function contact() {
             <ul className={styles.logocontainer}>
                 <Link href="">
                     <li  ref={el=>fb=el} onMouseEnter={upfb} onMouseLeave={downfb} className={styles.logo}>
-                        <Image className={styles.logoimage} src="/assets/facebook.svg" height="50" width="50" />
+                        <Image  className={styles.logoimage} src="/assets/facebook.svg" height="50" width="50" />
                     </li>
                 </Link>
                 <Link href="">

@@ -30,7 +30,7 @@ function HeroSection() {
         
     },[])
     return (
-        <div  className={styles.container}>
+        <div  id="home" className={styles.container}>
             <div className={styles.textarea}>
                 <h1 ref={el=>name=el} className={styles.bold}> 
                     Salil Rajkarnikar

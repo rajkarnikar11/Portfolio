@@ -13,21 +13,27 @@ import Skills from '../Components/skills'
 import Tools from '../Components/tools'
 import Footer from '../Components/Footer'
 import Contact from '../Components/contact'
+import Work from '../Components/work'
+import Workmedium from '../Components/workmedium'
+import Worksmall from '../Components/worksmall'
+
 
 SwiperCore.use([Navigation ,Parallax,Autoplay, EffectFade,Mousewheel, Pagination, Scrollbar, A11y]);
 
 export default function Home() {
   return (
-    <div >
+    <div className={styles.container}>
       <NavbarPrimary/>
-      <NavbarSecondary/>
+      {/* <NavbarSecondary/> */}
       <div className={styles.swiper}>
         <Swiper id="swiper"
-        effect="coverflow"
+        // effect="coverflow"
         spaceBetween={0}
         slidesPerView={1}
+        
+       
         direction={'vertical'}
-        // scrollbar={{ draggable: true }}
+        scrollbar={{ draggable: true }}
         // autoplay={{
         //   "delay": 12000,
         //   "disableOnInteraction": false
@@ -52,6 +58,11 @@ export default function Home() {
         <SwiperSlide>
           <Contact />
         </SwiperSlide>  
+        <SwiperSlide>
+          <Work />
+          <Workmedium/>
+          <Worksmall/>
+        </SwiperSlide> 
         <SwiperSlide>
           <Footer />
         </SwiperSlide> 
