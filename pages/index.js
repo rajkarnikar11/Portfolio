@@ -12,7 +12,7 @@ import Tools from '../Components/Tools'
 import Footer from '../Components/Footer'
 import Contact from '../Components/contact'
 import Work from '../Components/Work'
-import Workmedium from '../Components/WorkMmedium'
+import Workmedium from '../Components/WorkMedium'
 import Worksmall from '../Components/WorkSmall'
 
 

@@ -15,7 +15,7 @@ import Ninja from '../public/images/ninja.png'
 SwiperCore.use([Navigation ,Parallax,Autoplay, EffectFade,Mousewheel, Pagination, Scrollbar, A11y]);
 
 
-function Worksmall() {
+function WorkSmall() {
     
     
     let head=useRef(null);
@@ -109,4 +109,4 @@ function Worksmall() {
     )
 }
 
-export default Worksmall
+export default WorkSmall
