@@ -19,9 +19,7 @@ function work() {
     
     
     let head=useRef(null);
-    let fb=useRef(null);
-    let tw=useRef(null);
-    let li=useRef(null);
+    let timeLine=gsap.timeline();
     
     
     function up(){

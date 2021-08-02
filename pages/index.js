@@ -1,7 +1,7 @@
 
 import HeroSection from '../Components/heroSection'
 import styles from '../styles/Index.module.css'
-
+import  {  Head } from 'next/document'
 import NavbarPrimary from '../Components/navbarPrimary'
 
 
@@ -20,7 +20,9 @@ SwiperCore.use([Navigation ,Parallax,Autoplay, EffectFade,Mousewheel, Pagination
 
 export default function Home() {
   return (
+   
     <div className={styles.container}>
+      
       <NavbarPrimary/>
     
       <div className={styles.swiper}>
