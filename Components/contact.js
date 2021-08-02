@@ -4,7 +4,7 @@ import styles from '../styles/contact.module.css'
 import Image from 'next/dist/client/image';
 import Link from 'next/link'
 
-function contact() {
+function Contact() {
     
     let head=useRef(null);
     let fb=useRef(null);
@@ -119,4 +119,4 @@ function contact() {
     )
 }
 
-export default contact
+export default Contact

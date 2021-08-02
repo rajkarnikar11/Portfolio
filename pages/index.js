@@ -1,7 +1,7 @@
 
 import HeroSection from '../Components/heroSection'
 import styles from '../styles/Index.module.css'
-import  {  Head } from 'next/document'
+
 import NavbarPrimary from '../Components/navbarPrimary'
 
 

@@ -1,10 +1,10 @@
-import React, { useState,useRef } from 'react';
+import React, { useRef } from 'react';
 import {gsap} from "gsap";
 import styles from '../styles/skills.module.css'
 import Image from 'next/dist/client/image';
 
 function Skills() {
-    const [opacity1, setOpacity1] = useState(false); 
+    
     let head=useRef(null);
     let timeLine=gsap.timeline()
     

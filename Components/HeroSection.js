@@ -47,7 +47,7 @@ function HeroSection() {
                    Front End developer
                 </h1>
 
-                <a href='/resume/Resume.pdf' download="Resume" download target='_blank'>
+                <a href='/resume/Resume.pdf' download="Resume"  target='_blank'>
                     <div onMouseEnter={shake} onClick={pop} onMouseLeave={stop} ref={el=>contact=el} className={styles.button}>
                         <div>Resume</div>
                         <Image  src="/assets/download.svg" alt="download" height="20" width="20" />
