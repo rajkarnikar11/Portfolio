@@ -12,8 +12,8 @@ import Tools from '../Components/Tools'
 import Footer from '../Components/Footer'
 import Contact from '../Components/contact'
 import Work from '../Components/Work'
-import Workmedium from '../Components/Workmedium'
-import Worksmall from '../Components/Worksmall'
+import Workmedium from '../Components/WorkMmedium'
+import Worksmall from '../Components/WorkSmall'
 
 
 SwiperCore.use([Navigation ,Parallax,Autoplay, EffectFade,Mousewheel, Pagination, Scrollbar, A11y]);
