@@ -1,5 +1,5 @@
 
-import HeroSection from '../Components/heroSection'
+import HeroSection from '../Components/HeroSection'
 import styles from '../styles/Index.module.css'
 
 import NavbarPrimary from '../Components/navbarPrimary'
