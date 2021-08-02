@@ -1,5 +1,5 @@
 import React, { useState,useRef, useEffect } from 'react';
-import {gsap,Power3} from "gsap";
+import {gsap} from "gsap";
 import styles from '../styles/skills.module.css'
 import Image from 'next/dist/client/image';
 function Tools() {
@@ -39,11 +39,11 @@ function Tools() {
             <div className={styles.listcontainer}> 
                     <li  className={styles.skills}>
                         <div  className={styles.starcontainer}>
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" alt="star"/>
                         </div>
                         VSCode
                     </li>
@@ -57,11 +57,11 @@ function Tools() {
                 <div className={styles.listcontainer}> 
                     <li  className={styles.skills}>
                         <div  className={styles.starcontainer}>
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" alt="star"/>
                         </div>
                         Figma
                     </li>
@@ -74,11 +74,11 @@ function Tools() {
                 <div className={styles.listcontainer}> 
                     <li  className={styles.skills}>
                         <div  className={styles.starcontainer}>
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" alt="star"/>
                         </div>
                         Illustrator
                     </li>
@@ -91,11 +91,11 @@ function Tools() {
                 <div className={styles.listcontainer}> 
                     <li  className={styles.skills}>
                         <div  className={styles.starcontainer}>
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" alt="star"/>
                         </div>
                         Photoshop
                     </li>
@@ -105,14 +105,7 @@ function Tools() {
                     <div className={styles.seperatorline} />
                     <div className={styles.seperatorlineright} />
                 </div>
-                {/* <li className={styles.skills}>
-                    NEXTJS
-                </li>
-                <div className={styles.seperationlinecontainer}>
-                    <div className={styles.seperatorlineleft} />
-                    <div className={styles.seperatorline} />
-                    <div className={styles.seperatorlineright} />
-                </div> */}
+                
             </ul>
         </div>
     )

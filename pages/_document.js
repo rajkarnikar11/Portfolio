@@ -8,7 +8,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-        <Html>
+        <Html lang="en">
                 <Head>
                 <link rel="preconnect" href="https://fonts.googleapis.com"/>
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -24,6 +24,8 @@ class MyDocument extends Document {
                 <link rel="manifest" href="/manifest.json"/>
                 <link rel="apple-touch-icon" href="/icon512x512.png" />
                 <meta name="theme-color" content="#131331"/>
+                <meta name="description" content="Portfolio website"></meta>
+                <title>Portfolio | Home </title>
             </Head>
             <body>
                 <Main />

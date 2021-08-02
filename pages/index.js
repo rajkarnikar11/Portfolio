@@ -1,11 +1,9 @@
-import Head from 'next/head'
-import Image from 'next/image'
 
 import HeroSection from '../Components/heroSection'
 import styles from '../styles/Index.module.css'
 
 import NavbarPrimary from '../Components/navbarPrimary'
-import NavbarSecondary from '../Components/navbarSecondary'
+
 
 import SwiperCore, { Navigation,Parallax,EffectFade ,Autoplay,Mousewheel, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -24,7 +22,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <NavbarPrimary/>
-      {/* <NavbarSecondary/> */}
+    
       <div className={styles.swiper}>
         <Swiper id="swiper"
         effect="coverflow"

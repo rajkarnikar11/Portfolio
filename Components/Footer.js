@@ -1,8 +1,8 @@
-import React, { useState,useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../styles/footer.module.css'
-import {gsap,Power3} from "gsap";
+import {gsap} from "gsap";
 
 import SwiperCore, { Navigation,Parallax,EffectCube ,Autoplay,Mousewheel, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -20,17 +20,14 @@ function Footer() {
         },[])
     const refreshPage = ()=>{
        
-        // window.scrollTo({
-        //     top: 0,
-        //     behavior: "smooth"
-        //   });
+        
         window.location.reload()
      }
     
     return (
         <div className={styles.container}>
             <Swiper className={styles.quotecontainer} id="swiper"
-            // effect="coverflow"
+           
             spaceBetween={0}
             slidesPerView={1}
             cubeEffect={{
@@ -67,81 +64,79 @@ function Footer() {
                 <div className={styles.column}>
                     <h1 className={styles.title}>Some of my works</h1>
                     <ul >
-                        <Link href="">
+                        
                             <li className={styles.item}>Tousist-guide</li>
-                        </Link>
-                        <Link href="">
+                       
+                        
                             <li className={styles.item}>Rashtrawaadi-Nepal</li>
-                        </Link>
-                        <Link href="">
+                        
+                        
                             <li className={styles.item}>Kundalam</li>
-                        </Link>
-                        <Link href="">
+                       
+                        
                             <li className={styles.item}>Frontend Ninja</li>
-                        </Link>
+                        
                         
                     </ul>
                 </div>
                 <div className={styles.column}>
-                    <h1 className={styles.title}>What I can work with?</h1>
+                    <h1 className={styles.title}>What can I work with?</h1>
                     <ul >
-                        <Link href="">
+                        
                             <li className={styles.item}>REACTJS</li>
-                        </Link>
-                        <Link href="">
+                        
+                        
                             <li className={styles.item}>NEXTJS </li>
-                        </Link>
-                        <Link href="">
+                        
+                        
                             <li className={styles.item}>HTML</li>
-                        </Link>
-                        <Link href="">
+                        
                             <li className={styles.item}>CSS</li>
-                        </Link>
-                        <Link href="">
+                        
                             <li className={styles.item}>TailwindCSS</li>
-                        </Link>
-                        <Link href="">
+                        
                             <li className={styles.item}>GSAP</li>
-                        </Link>
-                        <Link href="">
+                        
                             <li className={styles.item}>SwiperJS</li>
-                        </Link>
+                        
+                       
+                            <li className={styles.item}>Typescript</li>
+                      
                         
                     </ul>
                 </div>
                 <div className={styles.column}>
                     <h1 className={styles.title}>Reach me on...</h1>
                     <ul >
-                        <Link href="">
+                        
                             <li className={styles.item}>Rajkarnikarsalil11@gmail.com</li>
-                        </Link>
-                        <Link href="">
+                        
                             <li className={styles.item}>+977-9841038513</li>
-                        </Link>
+                        
                         
                         
                     </ul>
                     <ul className={styles.logocontainer}>
                         <Link href="https://www.facebook.com/S.Rajkarnikar11/">
                             <li   className={styles.logo}>
-                                <Image  className={styles.logoimage} src="/assets/facebookw.svg" height="50" width="50" />
+                                <Image  className={styles.logoimage} src="/assets/facebookw.svg" height="50" width="50" alt="facebook"/>
                             </li>
                         </Link>
                         <Link href="https://twitter.com/rajkarnikar11">
                             <li   className={styles.logo}>
-                                <Image className={styles.logoimage} src="/assets/twitterw.svg" height="50" width="50" />
+                                <Image className={styles.logoimage} src="/assets/twitterw.svg" height="50" width="50" alt="twitter" />
                             </li>
                         </Link>
                         <Link href="https://np.linkedin.com/in/salil-rajkarnikar-93b649201">
                             <li   className={styles.logo}>
-                                <Image className={styles.logoimage} src="/assets/linkedinw.svg" height="50" width="50" />
+                                <Image className={styles.logoimage} src="/assets/linkedinw.svg" height="50" width="50"alt="linkedin" />
                             </li>
                         </Link>
                     </ul> 
                 </div>
                 <div  onClick={refreshPage} className={styles.totop}>
                     <div ref={el=>up=el}>    
-                        <Image  src="/assets/arrowup.svg" height="20" width="20" />
+                        <Image  src="/assets/arrowup.svg" height="20" alt="arrowup" width="20" />
                     </div>
                 </div>
             </div>
@@ -151,6 +146,3 @@ function Footer() {
 }
 
 export default Footer
-{/* <Link href="/">
-           <button onClick={refreshPage}>Refresh Page</button>   
-            </Link>  */}

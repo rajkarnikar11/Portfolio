@@ -1,8 +1,6 @@
-import React, { useState,useRef, useEffect } from 'react';
-import {gsap,Power3} from "gsap";
+import React, { useRef  } from 'react';
+import {gsap} from "gsap";
 import styles from '../styles/worksmall.module.css'
-import Image from 'next/dist/client/image';
-import Link from 'next/link'
 import Card from './Card';
 
 import SwiperCore, { Navigation,Parallax,EffectFade ,Autoplay,Mousewheel, Pagination, Scrollbar, A11y } from 'swiper';
@@ -21,13 +19,7 @@ function work() {
     
     
     let head=useRef(null);
-    let fb=useRef(null);
-    let tw=useRef(null);
-    let li=useRef(null);
-    let timeLine=gsap.timeline()
-    let timeLine1=gsap.timeline()
-    let timeLine2=gsap.timeline()
-    let sc=gsap.timeline()
+       let sc=gsap.timeline()
     
     
     function up(){

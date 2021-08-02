@@ -1,24 +1,28 @@
-import React, { useState,useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import {gsap,Power3} from "gsap";
 import Typewriter from "typewriter-effect";
 import Image from 'next/image'
-import Link from 'next/Link'
+
 import styles from '../styles/heroSection.module.css'
 
 function HeroSection() {
     let contact= useRef(null);
-    let info= useRef(null);
+    
     let name= useRef(null);
     let title= useRef(null);
     var tl = gsap.timeline();
-    var timeLine2 = gsap.timeline();
+   
     var t2 = gsap.timeline({repeat:-1});
     function pop(){
         t2.pause();
         window.location.reload()
         
     }
-    
+    function stop(){
+        t2.pause();
+        
+        
+    }
     
     const shake =()=>{
         t2.fromTo(contact,.2,{x:20},{x:0})
@@ -44,9 +48,9 @@ function HeroSection() {
                 </h1>
 
                 <a href='/resume/Resume.pdf' download="Resume" download target='_blank'>
-                    <div onMouseEnter={shake} onClick={pop} onMouseLeave={pop} ref={el=>contact=el} className={styles.button}>
+                    <div onMouseEnter={shake} onClick={pop} onMouseLeave={stop} ref={el=>contact=el} className={styles.button}>
                         <div>Resume</div>
-                        <Image  src="/assets/download.svg" height="20" width="20" />
+                        <Image  src="/assets/download.svg" alt="download" height="20" width="20" />
 
                     </div>                 
                 </a>

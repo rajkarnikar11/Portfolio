@@ -1,5 +1,5 @@
-import React, { useState,useRef, useEffect } from 'react';
-import {gsap,Power3} from "gsap";
+import React, { useState,useRef } from 'react';
+import {gsap} from "gsap";
 import styles from '../styles/skills.module.css'
 import Image from 'next/dist/client/image';
 
@@ -7,7 +7,7 @@ function Skills() {
     const [opacity1, setOpacity1] = useState(false); 
     let head=useRef(null);
     let timeLine=gsap.timeline()
-    let sc=gsap.timeline()
+    
     
     
     function up(){
@@ -42,11 +42,11 @@ function Skills() {
                 <div className={styles.listcontainer}> 
                     <li  className={styles.skills}>
                         <div  className={styles.starcontainer}>
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg"  alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg"  alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg"  alt="star"/>
                         </div>
                         ReactJS
                     </li>
@@ -60,11 +60,11 @@ function Skills() {
                 <div className={styles.listcontainer}> 
                     <li  className={styles.skills}>
                         <div  className={styles.starcontainer}>
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star"/>
                         </div>
                         HTML
                     </li>
@@ -77,11 +77,11 @@ function Skills() {
                 <div className={styles.listcontainer}> 
                     <li  className={styles.skills}>
                         <div  className={styles.starcontainer}>
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg"  alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" alt="star"/>
                         </div>
                         CSS
                     </li>
@@ -94,11 +94,11 @@ function Skills() {
                 <div className={styles.listcontainer}> 
                     <li  className={styles.skills}>
                         <div  className={styles.starcontainer}>
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" alt="star"/>
                         </div>
                         GSAP
                     </li>
@@ -111,11 +111,11 @@ function Skills() {
                 <div className={styles.listcontainer}> 
                     <li  className={styles.skills}>
                         <div  className={styles.starcontainer}>
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" />
-                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" />
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starfilled.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" alt="star"/>
+                            <Image className={styles.star} height="20" width="20" src="/assets/starempty.svg" alt="star"/>
                         </div>
                         NEXTJS
                     </li>

@@ -1,4 +1,4 @@
-import React, { useState,useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Link from 'next/link';
 import {gsap,Power3} from "gsap";
 import styles from '../styles/navbar.module.css'
@@ -8,10 +8,7 @@ function Navbar() {
     let head=useRef(null)
     var tl = gsap.timeline();
     var t2 = gsap.timeline();
-    // function mouseOver(evt) {
-    //     gsap.timeline().fromTo(head,.5, {y:-700},{y:0})
-          
-    //   }
+    
     useEffect(()=>{
         tl.fromTo(head,.2, {y:-700,rotation:0},{y:50,rotation:0})
         .to(head,.2, {y:-10,rotation:0})
