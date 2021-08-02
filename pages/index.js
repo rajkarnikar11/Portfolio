@@ -2,18 +2,18 @@
 import HeroSection from '../Components/HeroSection'
 import styles from '../styles/Index.module.css'
 
-import NavbarPrimary from '../Components/navbarPrimary'
+import NavbarPrimary from '../Components/NavbarPrimary'
 
 
 import SwiperCore, { Navigation,Parallax,EffectFade ,Autoplay,Mousewheel, Pagination, Scrollbar, A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Skills from '../Components/skills'
-import Tools from '../Components/tools'
+import Skills from '../Components/Skills'
+import Tools from '../Components/Tools'
 import Footer from '../Components/Footer'
 import Contact from '../Components/contact'
-import Work from '../Components/work'
-import Workmedium from '../Components/workmedium'
-import Worksmall from '../Components/worksmall'
+import Work from '../Components/Work'
+import Workmedium from '../Components/Workmedium'
+import Worksmall from '../Components/Worksmall'
 
 
 SwiperCore.use([Navigation ,Parallax,Autoplay, EffectFade,Mousewheel, Pagination, Scrollbar, A11y]);
